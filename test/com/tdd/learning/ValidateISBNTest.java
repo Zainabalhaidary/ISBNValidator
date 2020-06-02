@@ -16,7 +16,7 @@ import org.junit.jupiter.api.Test;
 class ValidateISBNTest {
 
 	@Test
-	void checkAValidTenDigitISBN() {
+	void checkAValidShortDigitISBN() {
 		ValidateISBN validator = new ValidateISBN();
 		boolean result = validator.checkISBN("0747528306");
 		assertTrue(result, "first value 10 digits ISBN");
@@ -26,7 +26,7 @@ class ValidateISBNTest {
 	}
 	
 	@Test
-	void checkAValidThirteenDigitISBN() {
+	void checkAValidLongDigitISBN() {
 		ValidateISBN validator = new ValidateISBN();
 		boolean result = validator.checkISBN("9780747528302");
 		assertTrue(result, "third value 13 digits ISBN");
